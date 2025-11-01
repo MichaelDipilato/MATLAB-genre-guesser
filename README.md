@@ -14,7 +14,7 @@ Each classifier uses two different feature sets:
 ## Warning
 This project needs some helper functions that you can find on the ```library``` folder of this
 [GitHub repository](https://github.com/pikrakis/Introduction-to-Audio-Analysis---a-MATLAB-approach). 
-These functions are crucial for feature extraction process. You can place them in the ```code/``` folder.
+These functions are crucial for feature extraction process. You can place them in the ```functions/``` folder.
 
 ## How it works
 - Choose three different music genres;
@@ -29,27 +29,28 @@ In order to get good results, it is recommended to use at least three different 
 ## Project structure
 ```
 .
-├── Add_noise.m                    # Script to add babble noise to audio files
-├── Chroma_features.m              # Extracts Chroma-based features from audio
-├── LICENSE                        # License file
-├── MFCCs_and_Chroma_features.m    # Extracts both MFCCs and Chroma features
-├── MFCCs_features.m               # Extracts MFCCs only
-├── Project.m                      # Main script
-├── README.md                      # Project documentation
-├── babble.wav                     # Babble noise sample
-├── code/                          # Auxiliary functions for feature extraction and processing
+├── Main.m                             # Main script
+├── scripts/                           # Dataset organized by genre
+│   ├── Add_noise.m                    # Script to add babble noise to audio files
+│   ├── Chroma_features.m              # Extracts Chroma-based features from audio
+│   ├── MFCCs_and_Chroma_features.m    # Extracts both MFCCs and Chroma features
+│   └── MFCCs_features.m               # Extracts MFCCs only
+├── README.md                          # Project documentation
+├── babble.wav                         # Babble noise sample
+├── LICENSE                            # License file
+├── functions/                         # Auxiliary functions for feature extraction and processing
 │   └── (helper functions)
-├── data/                          # Dataset organized by genre
+├── data/                              # Dataset organized by genre
 │   ├── first_genre/
-│   │   ├── train/                 # Training audio files for first genre
-│   │   └── test/                  # Testing audio files for first genre
+│   │   ├── train/                     # Training audio files for first genre
+│   │   └── test/                      # Testing audio files for first genre
 │   ├── second_genre/
 │   │   ├── train/
 │   │   └── test/
 │   └── third_genre/
 │       ├── train/
 │       └── test/
-└── confusion_matrix_examples/      # Example output plots of confusion matrices
+└── confusion_matrix_examples/         # Example output plots of confusion matrices
     ├── Chroma_confusion_matrix.png                      # Chroma confusion matrix image
     ├── MFCCs_and_chroma_confusion_matrix.png            # MFCCs and chroma confusion matrix image
     └── MFCCs_confusion_matrix.png                       # MFCCs confusion matrix image
