@@ -30,7 +30,7 @@ In order to get good results, it is recommended to use at least three different 
 ```
 .
 ├── Main.m                             # Main script
-├── scripts/                           # Dataset organized by genre
+├── scripts/                           # Scripts folder
 │   ├── Add_noise.m                    # Script to add babble noise to audio files
 │   ├── Chroma_features.m              # Extracts Chroma-based features from audio
 │   ├── MFCCs_and_Chroma_features.m    # Extracts both MFCCs and Chroma features
