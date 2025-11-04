@@ -29,31 +29,31 @@ In order to get good results, it is recommended to use at least three different 
 ## Project structure
 ```
 .
-├── Main.m                             # Main script
-├── scripts/                           # Scripts folder
-│   ├── Add_noise.m                    # Script to add babble noise to audio files
-│   ├── Chroma_features.m              # Extracts Chroma-based features from audio
-│   ├── MFCCs_and_Chroma_features.m    # Extracts both MFCCs and Chroma features
-│   └── MFCCs_features.m               # Extracts MFCCs only
-├── README.md                          # Project documentation
-├── babble.wav                         # Babble noise sample
-├── LICENSE                            # License file
-├── functions/                         # Auxiliary functions for feature extraction and processing
+├── main.m                                     # Main script
+├── scripts/                                   # Scripts folder
+│   ├── add_noise.m                            # Script that adds babble noise to audio files
+│   ├── extract_chroma_features.m              # Extracts Chroma-based features from audio
+│   ├── extract_mfccs_and_chroma_features.m    # Extracts both MFCCs and Chroma features
+│   └── extract_mfccs_features.m               # Extracts MFCCs only
+├── README.md                                  # Project documentation
+├── babble.wav                                 # Babble noise sample
+├── LICENSE                                    # License file
+├── functions/                                 # Auxiliary functions for feature extraction and processing
 │   └── (helper functions)
-├── data/                              # Dataset organized by genre
+├── data/                                      # Dataset organized by genre
 │   ├── first_genre/
-│   │   ├── train/                     # Training audio files for first genre
-│   │   └── test/                      # Testing audio files for first genre
+│   │   ├── train/                             # Training audio files for first genre
+│   │   └── test/                              # Testing audio files for first genre
 │   ├── second_genre/
 │   │   ├── train/
 │   │   └── test/
 │   └── third_genre/
 │       ├── train/
 │       └── test/
-└── confusion_matrix_examples/         # Example output plots of confusion matrices
-    ├── Chroma_confusion_matrix.png                      # Chroma confusion matrix image
-    ├── MFCCs_and_chroma_confusion_matrix.png            # MFCCs and chroma confusion matrix image
-    └── MFCCs_confusion_matrix.png                       # MFCCs confusion matrix image
+└── confusion_matrix_examples/                 # Example output plots of confusion matrices
+    ├── Chroma_confusion_matrix.png            # Chroma confusion matrix image
+    ├── MFCCs_and_chroma_confusion_matrix.png  # MFCCs and chroma confusion matrix image
+    └── MFCCs_confusion_matrix.png             # MFCCs confusion matrix image
 ```
 
 ## Noise testing

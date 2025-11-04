@@ -17,10 +17,10 @@ thirdGenre = answ{1};
 
 tic % start counting the time
 
-run Add_noise.m
-run MFCCs_features.m
-run Chroma_features.m
-run MFCCs_and_Chroma_features.m
+run add_noise.m
+run extract_mfccs_features.m
+run extract_chroma_features.m
+run extract_mfccs_and_chroma_features.m
 
 toc % stop counting the time
 
